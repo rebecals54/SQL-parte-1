@@ -10,8 +10,8 @@ Até agora, explorei principalmente os seguintes pontos:
 * **Criação de consultas básicas** com `SELECT`
 
   ```sql
-  SELECT nome, idade 
-  FROM clientes;
+ select email 
+ from sales.customers
   ```
 
   → Retorna colunas específicas da tabela `clientes`.
