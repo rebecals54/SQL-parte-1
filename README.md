@@ -19,9 +19,9 @@ Até agora, explorei principalmente os seguintes pontos:
 * **Filtragem de dados** com `WHERE`
 
   ```sql
-  SELECT * 
-  FROM pedidos
-  WHERE status = 'Entregue';
+  select email, state
+  from sales.customers
+  where state = 'CE'
   ```
 
   → Permite selecionar registros com base em condições.
