@@ -10,8 +10,8 @@ Até agora, explorei principalmente os seguintes pontos:
 * **Criação de consultas básicas** com `SELECT`
 
   ```sql
-  select email 
-  from sales.customers
+  SELECT nome, idade 
+  FROM clientes;
   ```
 
   → Retorna colunas específicas da tabela `clientes`.
@@ -19,9 +19,9 @@ Até agora, explorei principalmente os seguintes pontos:
 * **Filtragem de dados** com `WHERE`
 
   ```sql
-  select email, state
-  from sales.customers
-  where state = 'CE'
+  SELECT * 
+  FROM pedidos
+  WHERE status = 'Entregue';
   ```
 
   → Permite selecionar registros com base em condições.
@@ -68,8 +68,3 @@ Nos próximos estudos, pretendo aprofundar:
 * Funções de **agregação** (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`).
 * Uso de **GROUP BY** e **HAVING**.
 * Boas práticas de performance em consultas SQL.
-
----
-
-📖 Esse é apenas o início, mas já é possível perceber o quanto o SQL é poderoso para transformar dados em informação estruturada e confiável.
-
