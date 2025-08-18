@@ -61,10 +61,32 @@ Até agora, explorei principalmente os seguintes pontos:
 * O **filtro com `WHERE`** é um dos pontos mais importantes, pois garante que as consultas sejam objetivas e otimizadas.
 * Aprendi que **diferentes SGBDs (MySQL, PostgreSQL, SQL Server, Oracle, etc.)** podem ter pequenas variações na sintaxe.
 
-### 🎯 Próximos passos
+# 🎯 Desafio 
 
-Nos próximos estudos, pretendo aprofundar:
+## (Exercício 1) Selecione os nomes de cidade distintas que existem no estado de Minas Gerais em ordem alfabética (dados da tabela sales.customers)
+     select distinct city 
+     from sales.customers
+     where state = 'MG'
+     order by city
+ ---
+## (Exercício 2) Selecione o visit_id das 10 compras mais recentes efetuadas (dados da tabela sales.funnel)
+    select visit_id
+    from sales.funnel
+    where paid_date is not null
+    order by paid_date desc
+    limit 10
+---
+## (Exercício 3) Selecione todos os dados dos 10 clientes com maior score nascidos após 01/01/2000 (dados da tabela sales.customers)
+    select *
+    from sales.customers 
+    where birth_date >='2000-01-01' 
+    order by score desc
+    limit 10
 
-* Funções de **agregação** (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`).
-* Uso de **GROUP BY** e **HAVING**.
-* Boas práticas de performance em consultas SQL.
+
+
+
+
+
+
+
